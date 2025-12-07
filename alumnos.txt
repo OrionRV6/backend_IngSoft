@@ -1,0 +1,28 @@
+INTEGRANTES DEL EQUIPO:
+1. Benjamín Rodríguez - benjamin.rodriguez.01@alumnos.ucm.cl
+2. Joaquín Silva - joaquin.silva.01@alumnos.ucm.cl
+3. Benjamín Quevedo - benjamin.quevedo@alumnos.ucm.cl
+
+ESTILO DE CODIFICACIÓN:
+Se utilizó el estilo estándar de JavaScript (StandardJS) y arquitectura MVC.
+Referencia: https://standardjs.com/
+
+Modelo Seleccionado: Modelo Incremental
+
+Para el desarrollo del sistema de comercio electrónico (Backend), el equipo seleccionó el Modelo Incremental como la metodología de desarrollo de software más idónea. 
+Esta decisión se fundamenta en los siguientes puntos clave:
+
+1. Entrega Gradual y Funcional (División por Incrementos):
+   Dada la extensa lista de 20 requisitos funcionales, se optó por dividir el desarrollo en incrementos lógicos en lugar de una implementación monolítica ("Big Bang").
+   - Incremento 1 (Núcleo): Se priorizó la autenticación, gestión de usuarios y visualización del catálogo para asegurar la base del sistema.
+   - Incremento 2 (Transaccional): Se integraron las funcionalidades críticas de negocio, como el carrito de compras y la generación de órdenes.
+   - Incremento 3 (Gestión y Soporte): Finalmente, se incorporaron los módulos de administración, soporte técnico y mantenimiento.
+   Esto permitió tener versiones funcionales del software en etapas tempranas del ciclo de desarrollo.
+
+2. Reducción de Riesgos:
+   Al implementar primero las funcionalidades críticas (RF-1 a RF-12), el equipo pudo identificar y mitigar errores arquitectónicos antes de avanzar 
+   a módulos secundarios como las notificaciones o el mantenimiento (RF-20). Esto aseguró que el núcleo del negocio fuera estable desde el inicio.
+
+3. Facilidad de Pruebas y Validación:
+   El enfoque incremental facilitó la validación continua mediante herramientas como Thunder Client. Cada nuevo endpoint se probaba de manera aislada y luego integrada, 
+   asegurando que las nuevas implementaciones (como el sistema de reseñas RF-13) no rompieran la funcionalidad existente (como las órdenes de compra).
