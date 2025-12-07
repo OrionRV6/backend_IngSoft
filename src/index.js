@@ -1,4 +1,4 @@
-// src/index.js
+// src/index.js (ACTUALIZADO)
 
 require('dotenv').config();
 const express = require('express');
@@ -18,6 +18,7 @@ const carritoRoutes = require('./routes/carrito.routes');
 const ordenesRoutes = require('./routes/ordenes.routes'); 
 const notificacionesRoutes = require('./routes/notificaciones.routes');
 const resenasRoutes = require('./routes/resenas.routes');
+const adminRoutes = require('./routes/admin.routes'); 
 
 app.use('/auth', authRoutes);
 app.use('/productos', productosRoutes);
@@ -30,9 +31,10 @@ app.use('/carrito', carritoRoutes);
 app.use('/ordenes', ordenesRoutes);  
 app.use('/notificaciones', notificacionesRoutes);
 app.use('/resenas', resenasRoutes);
+app.use('/admin', adminRoutes); 
 
 app.get('/', (req, res) => {
-  res.send('Backend funcionando');
+  res.send('Backend funcionando correctamente con 20 RF completados.');
 });
 
 app.listen(PORT, () => {
